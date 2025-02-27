@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQY Ping | Entraînements</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .training-header-image {
+            background-image: url('https://github.com/AurelienSuarez/ping.site/blob/main/images/dsc08807-avec-accentuation-bruit-1024x603.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+
+        .time-slot {
+            transition: all 0.3s ease;
+        }
+
+        .time-slot:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .location-badge-barde {
+            background-color: rgba(55, 65, 81, 0.1);
+            border-left: 4px solid #4B5563;
+        }
+
+        .location-badge-droits {
+            background-color: rgba(17, 24, 39, 0.1);
+            border-left: 4px solid #111827;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="h-10 w-10 bg-gray-900 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-table-tennis-paddle-ball text-white text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold text-gray-800">SQY Ping</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Accueil
+                        </a>
+                        <a href="club.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Le Club
+                        </a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Compétitions
+                        </a>
+                        <a href="entrainements.html" class="border-gray-900 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Entraînements
+                        </a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <a href="#" class="bg-gray-900 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800">
+                        Espace Membres
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
+                        <span class="sr-only">Ouvrir le menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="relative training-header-image">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+                    Entraînements
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Horaires et groupes d'entraînement pour tous les niveaux
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Notre approche -->
+            <div class="mb-16">
+                <div class="lg:text-center mb-8">
+                    <h2 class="text-base text-gray-900 font-semibold tracking-wide uppercase">Notre philosophie</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Une approche adaptée à chaque joueur
+                    </p>
+                </div>
+                <div class="prose prose-lg mx-auto text-gray-500">
+                    <p>
+                        Au SQY Ping, nous sommes convaincus que chaque joueur a son propre rythme d'apprentissage et ses objectifs personnels. C'est pourquoi nous proposons des séances d'entraînement adaptées à tous les profils : des jeunes débutants aux compétiteurs expérimentés, en passant par les joueurs loisirs de tous âges.
+                    </p>
+                    <p>
+                        Nos entraîneurs diplômés mettent en place des séances structurées alliant travail technique, exercices tactiques et situations de match. Une attention particulière est portée à la progression individuelle dans une ambiance conviviale et motivante.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Nos lieux d'entraînements -->
+            <div class="mb-16">
+                <div class="lg:text-center mb-8">
+                    <h2 class="text-base text-gray-900 font-semibold tracking-wide uppercase">Nos installations</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Lieux d'entraînement
+                    </p>
+                </div>
+                
+                <div class="mt-12 grid gap-6 lg:grid-cols-2">
+                    <!-- Gymnase Jean-Pierre Barde -->
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Gymnase Jean-Pierre Barde</h3>
+                            <div class="flex items-start mb-4">
+                                <div class="flex-shrink-0 h-5 w-5 text-gray-900">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="ml-3 text-gray-500">
+                                    <p>1 rue des Sports</p>
+                                    <p>78180 Montigny-le-Bretonneux</p>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
+                                    <i class="fas fa-table-tennis-paddle-ball mr-1"></i> 12 tables
+                                </span>
+                                <span class="ml-2 inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
+                                    <i class="fas fa-ruler mr-1"></i> Aire de jeu 600m²
+                                </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Notre salle principale dispose de 12 tables de compétition et d'un espace d'échauffement. C'est ici que se déroulent la majorité de nos entraînements et nos compétitions à domicile.
+                            </p>
+                            <img src="/api/placeholder/800/300" alt="Gymnase Jean-Pierre Barde" class="w-full h-48 object-cover rounded-md">
+                        </div>
+                    </div>
+                    
+                    <!-- Gymnase des Droits de l'Homme -->
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Gymnase des Droits de l'Homme</h3>
+                            <div class="flex items-start mb-4">
+                                <div class="flex-shrink-0 h-5 w-5 text-gray-900">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="ml-3 text-gray-500">
+                                    <p>Avenue du 8 Mai 1945</p>
+                                    <p>78280 Guyancourt</p>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
+                                    <i class="fas fa-table-tennis-paddle-ball mr-1"></i> 6 tables
+                                </span>
+                                <span class="ml-2 inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
+                                    <i class="fas fa-ruler mr-1"></i> Aire de jeu 300m²
+                                </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Notre salle secondaire accueille principalement les sessions d'entraînement des jeunes et les séances loisirs. Nous y disposons de 6 tables avec un bon éclairage.
+                            </p>
+                            <img src="/api/placeholder/800/300" alt="Gymnase des Droits de l'Homme" class="w-full h-48 object-cover rounded-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planning des entraînements -->
+            <div class="mb-16">
+                <div class="lg:text-center mb-12">
+                    <h2 class="text-base text-gray-900 font-semibold tracking-wide uppercase">Planning</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Horaires d'entraînement
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        Saison 2024-2025
+                    </p>
+                </div>
+                
+                <div class="flex justify-end mb-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-gray-600 rounded-sm mr-2"></div>
+                            <span class="text-sm text-gray-600">Gymnase J.P. Barde</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-gray-900 rounded-sm mr-2"></div>
+                            <span class="text-sm text-gray-600">Gymnase des Droits de l'Homme</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- Lundi -->
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">Lundi</h3>
+                        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">17h00 - 18h30</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Jeunes débutants (7-10 ans)</h4>
+                                <p class="text-sm text-gray-500">Initiation ludique et apprentissage des fondamentaux</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Marc
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">18h30 - 20h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Jeunes confirmés (11-17 ans)</h4>
+                                <p class="text-sm text-gray-500">Perfectionnement technique et tactique</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Sophie
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">20h00 - 22h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Adultes compétition</h4>
+                                <p class="text-sm text-gray-500">Entraînement spécifique et préparation aux compétitions</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Sophie
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mardi -->
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">Mardi</h3>
+                        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">18h00 - 19h30</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-900 text-white">Droits de l'Homme</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Jeunes loisirs (8-14 ans)</h4>
+                                <p class="text-sm text-gray-500">Pratique récréative et apprentissage des bases</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Marc
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">19h30 - 21h30</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-900 text-white">Droits de l'Homme</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Adultes loisirs</h4>
+                                <p class="text-sm text-gray-500">Jeu libre et matchs amicaux</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-users mr-1"></i> Accès libre
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mercredi -->
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">Mercredi</h3>
+                        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">14h00 - 15h30</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Baby ping (4-7 ans)</h4>
+                                <p class="text-sm text-gray-500">Éveil et motricité, approche ludique</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Marc
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">15h30 - 17h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Jeunes débutants (8-12 ans)</h4>
+                                <p class="text-sm text-gray-500">Initiation et apprentissage des bases</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Thomas
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">17h00 - 19h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Groupe Elite jeunes</h4>
+                                <p class="text-sm text-gray-500">Perfectionnement et entraînement intensif</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Sophie
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Jeudi -->
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">Jeudi</h3>
+                        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">18h00 - 20h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Adultes tous niveaux</h4>
+                                <p class="text-sm text-gray-500">Perfectionnement technique et tactique</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Thomas
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">20h00 - 22h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Équipes compétition</h4>
+                                <p class="text-sm text-gray-500">Entraînement spécifique et préparation aux matchs</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Sophie
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vendredi -->
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">Vendredi</h3>
+                        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">17h30 - 19h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-900 text-white">Droits de l'Homme</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Jeunes intermédiaires</h4>
+                                <p class="text-sm text-gray-500">Perfectionnement technique</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Marc
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">19h00 - 21h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-900 text-white">Droits de l'Homme</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Adultes loisirs</h4>
+                                <p class="text-sm text-gray-500">Jeu libre et matchs amicaux</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-users mr-1"></i> Accès libre
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Samedi -->
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">Samedi</h3>
+                        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">10h00 - 12h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Entraînement familial</h4>
+                                <p class="text-sm text-gray-500">Séance parents-enfants, tous niveaux</p>
+                                <div class="mt-2 flex">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                        <i class="fas fa-user-tie mr-1"></i> Coach: Thomas
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slot bg-white p-4 rounded-lg shadow border border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-medium text-gray-900">14h00 - 17h00</span>
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-gray-600 text-white">Barde</span>
+                                </div>
+                                <h4 class="font-medium text-gray-800 mb-1">Compétitions par équipes</h4>
+                                <p class="text-sm text-gray-500"
+                                  <html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQY Ping | Entraînements</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .training-header-image {
+            background-image: url('https://github.com/AurelienSuarez/ping.site/blob/main/images/dsc08807-avec-accentuation-bruit-1024x603.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+
+        .time-slot {
+            transition: all 0.3s ease;
+        }
+
+        .time-slot:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .location-badge-barde {
+            background-color: rgba(55, 65, 81, 0.1);
+            border-left: 4px solid #4B5563;
+        }
+
+        .location-badge-droits {
+            background-color: rgba(17, 24, 39, 0.1);
+            border-left: 4px solid #111827;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class
